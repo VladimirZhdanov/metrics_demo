@@ -35,22 +35,4 @@ public class DemoApplication {
 				.description("test count")
 				.register(registry);
 	}
-
-//	@Bean
-//	public RestTemplateBuilder restTemplateBuilder() {
-//		return new RestTemplateBuilder();
-//	}
-
-//	@EventListener
-//	public void onApplicationEvent(ApplicationReadyEvent event) {
-//
-//		RestTemplate restTemplate = new RestTemplate();
-//
-//		String fooResourceUrl
-//				= "https://v2.jokeapi.dev";
-//		ResponseEntity<String> response
-//				= restTemplate.getForEntity(fooResourceUrl + "/joke/Any", String.class);
-//		System.out.println(response.getBody());
-//
-//	}
 }

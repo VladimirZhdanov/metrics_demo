@@ -1,6 +1,6 @@
 package com.example.demo.controllers;
 
-import com.example.demo.feign.TestClient;
+import com.example.demo.feign.RealClient;
 import com.example.demo.feign.TestTimeOutClient;
 import com.example.demo.model.JokeDto;
 import lombok.AllArgsConstructor;
@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @AllArgsConstructor
 public class DemoController {
     private final RestTemplate restTemplate;
-    private final TestClient testClient;
+    private final RealClient testClient;
     private final TestTimeOutClient testTimeOutClient;
 
     @GetMapping("/greeting/{name}")
